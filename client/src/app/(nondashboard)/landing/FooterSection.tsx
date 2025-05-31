@@ -2,12 +2,14 @@ import Link from "next/link";
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faFacebook,
-  faInstagram,
-  faTwitter,
-  faLinkedin,
-  faYoutube,
+  // faFacebook,
+  // faInstagram,
+  // faTwitter,
+  // faLinkedin,
+  // faYoutube,
   faWhatsapp,
+  faTelegram
+
 } from "@fortawesome/free-brands-svg-icons";
 
 const FooterSection = () => {
@@ -22,7 +24,7 @@ const FooterSection = () => {
           </div>
           <nav className="mb-4">
             <ul className="flex space-x-6">
-              <li>
+              {/* <li>
                 <Link href="/about">About Us</Link>
               </li>
               <li>
@@ -36,29 +38,17 @@ const FooterSection = () => {
               </li>
               <li>
                 <Link href="/privacy">Privacy</Link>
-              </li>
+              </li> */}
             </ul>
           </nav>
           <div className="flex space-x-4 mb-4">
-            <a
-              href="#"
-              aria-label="Facebook"
-              className="hover:text-primary-600"
-            >
-              <FontAwesomeIcon icon={faFacebook} className="h-6 w-6" />
-            </a>
-            <a
-              href="#"
-              aria-label="Instagram"
-              className="hover:text-primary-600"
-            >
-              <FontAwesomeIcon icon={faInstagram} className="h-6 w-6" />
-            </a>
-            <a href="#" aria-label="Twitter" className="hover:text-primary-600">
-              <FontAwesomeIcon icon={faTwitter} className="h-6 w-6" />
+
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=victorspringsltd@gmail.com" target="_blank" rel="noopener noreferrer" aria-label="Email" className="hover:text-primary-600">
+              <FontAwesomeIcon icon={faTelegram} className="h-6 w-6" />
             </a>
     
-            <a href="#" aria-label="Whatsapp" className="hover:text-primary-600">
+    
+            <a href="https://wa.me/254717849484?text=Hi%2C%20how%20can%20I%20help%20you%3F" target="_blank" aria-label="Whatsapp" className="hover:text-primary-600">
               <FontAwesomeIcon icon={faWhatsapp} className="h-6 w-6" />
             </a>
           </div>
